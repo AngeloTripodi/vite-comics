@@ -5,11 +5,20 @@ export default {
 </script>
 
 <template>
-    <div>
-        <h1>UE!</h1>
-    </div>
+    <section class="contentSection">
+        <div class="content wrapper">
+            <h1> --> Content Goes Here &lt;-- </h1>
+        </div>
+    </section>
 </template>
 
-<style lang="">
-    
+<style lang="scss">
+.contentSection {
+    background-color: #1c1c1c;
+}
+
+.content {
+    padding: 2rem 0;
+    color: white;
+}
 </style>

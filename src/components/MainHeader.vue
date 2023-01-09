@@ -6,7 +6,7 @@ export default {
 
 <template>
     <header>
-        <div class="headerContainer">
+        <div class="headerContainer wrapper">
             <div class="logoSection">
                 <img src="../assets/img/dc-logo.png" alt="DC Logo">
             </div>
@@ -29,11 +29,9 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../styles/general.scss' as *;
-
 .headerContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .navSection {
         display: flex;

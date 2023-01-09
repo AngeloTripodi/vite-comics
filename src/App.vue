@@ -17,8 +17,10 @@ export default {
 
 <template>
   <MainHeader />
-  <ContentSection />
-  <IconCtaSection />
+  <main>
+    <ContentSection />
+    <IconCtaSection />
+  </main>
   <MainFooter />
 
 </template>
