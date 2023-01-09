@@ -1,24 +1,26 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainHeader from './components/MainHeader.vue';
+import ContentSection from './components/ContentSection.vue';
+import IconCtaSection from './components/IconCtaSection.vue';
+import MainFooter from './components/MainFooter.vue';
 
 export default {
   components: {
-    HelloWorld,
+    MainHeader,
+    ContentSection,
+    IconCtaSection,
+    MainFooter
   }
 }
 
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vcccue" />
+  <MainHeader />
+  <ContentSection />
+  <IconCtaSection />
+  <MainFooter />
+
 </template>
 
 <style lang="scss">
