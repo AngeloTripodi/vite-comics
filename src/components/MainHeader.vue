@@ -13,7 +13,7 @@ export default {
             <div class="navSection">
                 <ul class="MyNav">
                     <li>CHARACTERS</li>
-                    <li>COMICS</li>
+                    <li class="active">COMICS</li>
                     <li>MOVIES</li>
                     <li>TV</li>
                     <li>GAMES</li>
@@ -49,7 +49,14 @@ export default {
         li {
             padding-right: 1.5rem;
             font-weight: 700;
+            cursor: pointer;
+
+            &.active,
+            &:hover {
+                color: #53b0f0;
+            }
         }
+
     }
 
     .logoSection img {
