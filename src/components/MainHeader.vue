@@ -1,5 +1,62 @@
 <script>
 export default {
+    data() {
+        return {
+            navMenuLinks: [
+                {
+                    text: 'CHARACTERS',
+                    url: '#',
+                    isActive: false
+                },
+                {
+                    text: 'COMICS',
+                    url: '#',
+                    isActive: true
+                },
+                {
+                    text: 'MOVIES',
+                    url: '#',
+                    isActive: false
+                },
+                {
+                    text: 'TV',
+                    url: '#',
+                    isActive: false
+                },
+                {
+                    text: 'GAMES',
+                    url: '#',
+                    isActive: false
+                },
+                {
+                    text: 'COLLECTIBLES',
+                    url: '#',
+                    isActive: false
+                },
+                {
+                    text: 'VIDEOS',
+                    url: '#',
+                    isActive: false
+                },
+                {
+                    text: 'FANS',
+                    url: '#',
+                    isActive: false
+                },
+                {
+                    text: 'NEWS',
+                    url: '#',
+                    isActive: false
+                },
+                {
+                    text: 'SHOP',
+                    url: '#',
+                    isActive: false
+                }
+
+            ]
+        }
+    },
 
 }
 </script>
@@ -12,16 +69,9 @@ export default {
             </div>
             <div class="navSection">
                 <ul class="MyNav">
-                    <li>CHARACTERS</li>
-                    <li class="active">COMICS</li>
-                    <li>MOVIES</li>
-                    <li>TV</li>
-                    <li>GAMES</li>
-                    <li>COLLECTIBLES</li>
-                    <li>VIDEOS</li>
-                    <li>FANS</li>
-                    <li>NEWS</li>
-                    <li>SHOP</li>
+                    <li v-for="navElement in navMenuLinks" :class="(navElement.isActive === true) ? 'active' : ''">{{
+                        navElement.text
+                    }}</li>
                 </ul>
             </div>
         </div>
