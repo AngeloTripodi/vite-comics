@@ -35,7 +35,7 @@ export default {
     },
     methods: {
         getImagePath: function (imgPath) {
-            return new URL(`../assets/img/$(imgPath}`, import.meta.url).href;
+            return new URL(`../assets/img/${imgPath}`, import.meta.url).href;
         }
     },
 
