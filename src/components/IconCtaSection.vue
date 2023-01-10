@@ -33,6 +33,11 @@ export default {
             ]
         }
     },
+    methods: {
+        getImagePath: function (imgPath) {
+            return new URL(`../assets/img/$(imgPath}`, import.meta.url).href;
+        }
+    },
 
 }
 </script>
@@ -41,16 +46,14 @@ export default {
     <section class="ctaSection">
         <div class="ctas wrapper">
             <ul>
-                <li v-for="cta in ctaLinks"> <img :src="'src/assets/img/' + cta.img" :alt="cta.text"> {{
-                    cta.text
-                }}
+                <li v-for="cta in ctaLinks"> <img :src="'src/assets/img/' + cta.img" :alt="cta.text"> {{ cta.text }}
                 </li>
             </ul>
         </div>
     </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .ctaSection {
     background-color: #0282f9;
 }
@@ -76,8 +79,7 @@ export default {
         margin-right: 1rem;
 
         img {
-            width: 62px;
-            height: 77%;
+            height: 55px;
             padding-right: 1rem;
         }
 

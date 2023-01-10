@@ -78,7 +78,7 @@ export default {
     </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .headerContainer {
     display: flex;
     justify-content: space-between;
@@ -95,11 +95,16 @@ export default {
         padding: 0;
 
         li {
-            padding-right: 1.5rem;
+            margin-right: 1.5rem;
             font-weight: 700;
             cursor: pointer;
+            line-height: 132px;
 
-            &.active,
+            &.active {
+                border-bottom: 5px solid #53b0f0;
+                color: #53b0f0;
+            }
+
             &:hover {
                 color: #53b0f0;
             }

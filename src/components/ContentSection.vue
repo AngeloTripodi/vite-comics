@@ -1,6 +1,10 @@
 <script>
 export default {
+    data() {
+        return {
 
+        }
+    },
 }
 </script>
 
@@ -12,7 +16,7 @@ export default {
     </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .contentSection {
     background-color: #1c1c1c;
 }

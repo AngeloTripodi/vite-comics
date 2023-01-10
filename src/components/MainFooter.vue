@@ -82,7 +82,7 @@ export default {
     </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 footer {
     background-image: url(../assets/img/footer-bg.jpg);
     background-position: center;
