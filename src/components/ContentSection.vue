@@ -1,8 +1,10 @@
 <script>
+import comicsJson from '../db/dc-comics.json';
+
 export default {
     data() {
         return {
-
+            comicsList: comicsJson,
         }
     },
 }
@@ -11,7 +13,7 @@ export default {
 <template>
     <section class="contentSection">
         <div class="content wrapper">
-            <h1> --> Content Goes Here &lt;-- </h1>
+            <h1> --> Content Goes Here &lt;-- {{ comicsList[0] }} </h1>
         </div>
     </section>
 </template>
