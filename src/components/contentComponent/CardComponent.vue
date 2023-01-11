@@ -21,6 +21,7 @@ export default {
 div.card {
     width: min-content;
     margin: 0 auto;
+    padding-top: 1.5rem;
 }
 
 div.card img {

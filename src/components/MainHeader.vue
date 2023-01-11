@@ -112,9 +112,16 @@ export default {
 
     }
 
-    .logoSection img {
-        margin: .75rem 0;
+    .logoSection {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin: .75rem 0;
+            width: 85%;
+        }
     }
+
 
 }
 </style>

@@ -38,7 +38,7 @@ export default {
     background-color: #1c1c1c;
 
     .content {
-        padding: 4rem 0 2rem 0;
+        padding: 3rem 0 2rem 0;
         color: white;
         display: flex;
         flex-wrap: wrap;
@@ -81,7 +81,6 @@ export default {
         align-items: center;
         width: 225px;
         height: 50px;
-        text-align: center;
         font-size: 2rem;
         font-weight: bold;
         color: white;
